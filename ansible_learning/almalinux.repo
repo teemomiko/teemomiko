@@ -1,0 +1,15 @@
+# almalinux.repo
+[local-base]
+name=Local Base Repository
+baseurl=file:///mnt/cdrom/BaseOS
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+
+[appstream]
+name=AlmaLinux $releasever - AppStream
+baseurl=file:///mnt/cdrom/AppStream
+enabled=1
+gpgcheck=1
+countme=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinuxOS/
