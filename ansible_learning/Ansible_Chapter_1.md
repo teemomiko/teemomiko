@@ -58,7 +58,7 @@ filter_plugins     = /usr/local/share/ansible_plugins/filter_plugins
       wget https://www.python.org/ftp/python/3.8.1/Python-3.8.1.tgz
       tar -zxvf Python-3.8.1.tgz  -C /usr/local/
       ./configure
-      make -i 8 && make install
+      make -j 8 && make install
       python3 --version. # check for isntalled 
       ```
 
